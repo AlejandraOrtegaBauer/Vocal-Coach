@@ -1,0 +1,155 @@
+.p1, .p2, .p3, .p4{
+    background-color: rgb(255, 191, 0);
+    border: 2px solid #F6C324;
+    margin-bottom: 1%;
+    font-weight: 300;
+}
+
+/*Comienzo de Header*/
+.vocalcoach{
+    width: 100%; height: auto;
+    margin-bottom: 1em;
+}
+
+/* Body */
+
+
+.video1{
+    width: 70%;
+    height: 100%;
+    margin-bottom: 1em;
+    margin-left: 3em;
+}
+.boxServicios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.serviciosImg img{
+    width: 270px; height: 350px;
+}
+
+.video2{
+    width: 100%;
+    height: auto;
+}
+
+.vid2{
+    width: 70%;
+    height: 100%;
+    margin-bottom: 1em;
+    margin-left: 3em;
+}
+
+.c{
+    border: olive 1px solid;
+    padding: 50px 25px 50px 25px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+/* Grillas y Media Queries */
+
+/* Celular */
+.contenedor{
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "header"
+    "p1"
+    "vid1"
+    "p2"
+    "serviciosImg"
+    "p3"
+    "p4"
+    "vid2"
+    "comments"
+    "footer"
+    ;
+}
+
+.navbar{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+}
+
+.article1{
+    grid-area: p1;
+}
+
+.mainVid{
+    grid-area: vid1;
+}
+
+.article2{
+    grid-area: p2;
+}
+
+.serviciosImg{
+    grid-area: serviciosImg;  
+}
+
+.article3{
+    grid-area: p3;
+}
+
+.article4{
+    grid-area: p4;
+}
+
+.video2{
+    grid-area: vid2;
+}
+
+.c{
+    grid-area: comments;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/*Tablet*/
+
+@media screen and (min-width:768px){
+  .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "nav nav"
+    "header header"
+    "vid1 p1"
+    "p2 p2"
+    "serviciosImg"
+    "p3 vid2"
+    "p4 p4"
+    "comments comments"
+    "footer footer"
+    ;
+}
+}
+
+/*Ordenador*/
+
+@media screen and (min-width: 992px){
+    .contenedor{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "nav nav nav nav"
+      "header header header header"
+      "vid1 vid1 p1 p1"
+      "vid1 vid1 p2 p2"
+      "serviciosImg serviciosImg serviciosImg serviciosImg"
+      "p3 p3 vid2 vid2"
+      "p4 p4 vid2 vid2"
+      "comments comments comments comments"
+      "footer footer footer footer"
+      ;
+  }
+}

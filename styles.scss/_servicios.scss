@@ -1,0 +1,111 @@
+
+div{
+  img{
+    width: 15rem;
+  }
+}
+
+article{
+  .box{
+    background-color: crimson;
+    margin: 1em;
+    width: 60%;
+  }
+}
+
+article{
+  .imgContainer{
+    padding: 2em;
+    width: 30%;
+  }
+}
+
+/*Grids*/
+
+.gridServicios{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "article1"
+  "article2"
+  "article3"
+  "article4"
+  ;
+}
+
+.ar1{
+  grid-area: article1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+
+.ar2{
+  grid-area: article2;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+}
+
+.ar3{
+  grid-area: article3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.ar4{
+  grid-area: article4;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+}
+
+/*Media*/
+
+/*Tablet*/
+@media screen and (min-width:768px){
+  .ar1{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .ar2{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .ar3{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .ar4{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/*Ordenador*/
+@media screen and (min-width:992px){
+  .ar1{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .ar2{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .ar3{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .ar4{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
