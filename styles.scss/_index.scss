@@ -1,9 +1,16 @@
-.p1, .p2, .p3, .p4{
-    background-color: rgb(255, 191, 0);
-    border: 2px solid #F6C324;
-    margin-bottom: 1%;
-    font-weight: 300;
+@mixin fonts{
+    font: {
+        size: $small;
+        family: 'Montserrat', sans-serif;
+        weight: 300;
+    }
 }
+
+.p1, .p2, .p3, .p4{
+    @include fonts;
+    padding: 1em;
+}
+
 
 /*Comienzo de Header*/
 .vocalcoach{
@@ -36,10 +43,8 @@
 }
 
 .vid2{
-    width: 70%;
-    height: 100%;
-    margin-bottom: 1em;
-    margin-left: 3em;
+    @extend .video1;
+
 }
 
 .c{
