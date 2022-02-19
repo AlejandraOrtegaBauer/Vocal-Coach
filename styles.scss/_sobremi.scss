@@ -1,0 +1,61 @@
+/*Mobile*/
+@media (min-width:480px){
+ div{
+     iframe{
+         width: 100%;
+     }
+ }
+
+ .intro{
+     background-color: $violeta;
+ }
+
+ .logros{
+     background-color: $violeta;
+ }
+
+ .formacion{
+     background-color: $amarillo;
+    }
+}
+
+
+/*Tablet*/
+@media (min-width:768px){
+    .container-sobremi{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 1em;
+        grid-template-areas:
+        "vid1 intro"
+        "formacion formacion"
+        "logros vid2"
+        ;
+    }
+
+    .vid1{
+        grid-area: vid1;
+        width: 90%;
+    }
+    .intro{
+        grid-area: intro;
+    }
+    .formacion{
+        grid-area: formacion;
+    }
+    .logros{
+        grid-area: logros;
+    }
+    .vid2{
+        grid-area: vid2;
+        width: 90%;
+    }
+
+
+}
+
+
+
+/*Desktop*/

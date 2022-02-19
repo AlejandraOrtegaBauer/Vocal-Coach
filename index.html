@@ -13,17 +13,13 @@
     <link rel="stylesheet" href="./estilos/estilos.css">
     <title>Alejandra Ortega Vocal Coach</title>
 </head>
-<STYLE>
-    A {
-        text-decoration: none;
-    }
-</STYLE>
+
 <body>
     <div class="contenedor">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./imagenes/Logo.jpg" alt="Logo"></a>
+                    <img class="logo-nav" src="./imagenes/logo.jpeg" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -49,101 +45,93 @@
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
                     </form>
                 </div>
             </div>
         </nav>
+
         <!-- Header -->
         <header class="header">
             <div class="headerImg">
-                <img class="vocalcoach" src="./imagenes/alejandra.jpeg" alt="vocalcoach">
+                <img class="vocalcoach" src="./imagenes/alejandra.png" alt="vocalcoach">
             </div>
         </header>
-        <!-- Main Vid -->
-        <div class="mainVid">
-            <iframe class="video1" src="https://www.youtube.com/embed/7c-5vJ83hME"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
 
-        <!-- Parrafos Article -->
-        <article class="article1">
-            <p data-aos="zoom-in-up" class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perspiciatis et reiciendis
-                vel! Voluptas rerum distinctio perferendis a quibusdam suscipit inventore ratione. Enim, animi odio? Rem
-                maiores quisquam nemo dignissimos Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
-                consectetur autem! Asperiores aliquid odit mollitia architecto eligendi, in, suscipit enim quasi unde
-                minima numquam praesentium repudiandae quo ratione. Dicta, labore!.
-            </p>
-        </article>
-        <article class="article2">
-            <p data-aos="zoom-in-up" class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam non unde nam sunt omnis
-                officia labore nulla, fuga laborum illo aliquam doloremque molestias ipsum repellat libero accusamus
-                tempora a. Totam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit impedit quaerat
-                provident, adipisci ipsa perferendis corrupti distinctio sapiente, asperiores officiis illo pariatur
-                eaque voluptas ipsum ullam sed? Dolores, vitae. Exercitationem.
-            </p>
-        </article>
+        <section class="slogan-box">
+            <p class="slogan">"El <strong>artista</strong> no es nada sin el <strong> don </strong>, pero el don no es nada sin el <strong>trabajo</strong>."</p>
+        </section>
 
         <!-- Resumen Servicios -->
-        <section class="container serviciosImg">
-            <div class="row">
-                <article class="boxServicios d-flex justify-content-around">
-                    <div class="prod1 col-12 col-md-6 col-lg-3">
-                        <img src="./imagenes/canto.jpg" width="100%" alt="clasesdecanto">
-                        <h4 class="rotulos"><span>Canto Online</span></h2>
-                    </div>
-                    <div class="prod2 col-12 col-md-6 col-lg-3"><img src="./imagenes/compo.jpg" width="100%"
-                            alt="cantoescenario">
-                        <h4 class="rotulos"><span>Composición Online</span></h2>
-                    </div>
-                    <div class="prod3 col-12 col-md-6 col-lg-3"><img src="./imagenes/cursos.jpg" width="100%"
-                            alt="expresioncorporal">
-                        <h4 class="rotulos"><span>Cursos Adicionales</span></h2>
-                    </div>
-                    <div class="prod4 col-12 col-md-6 col-lg-3"> <img src="./imagenes/artista.jpg" width="100%"
-                            alt="composicion">
-                        <h4 class="rotulos"><span>Guía Para Artistas</span></h2>
-                    </div>
-                </article>
+        <section class="info-servicios">
+            <div class="img-servicios img1" id="canto">
+                <div class="info">
+                    <p class="info-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates rem amet praesentium incidunt rerum qui sunt vitae commodi animi unde illum iusto repudiandae voluptas molestias quae odio recusandae, doloribus alias!</p>
+                </div>
             </div>
+            <form class="boton-servicios btn1">
+                <a href="./secciones/servicios.html">Canto Online</a>
+            </form>
+
+            <div class="img-servicios img2" id="compo">
+                <div class="info">
+                    <p class="info-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates rem amet praesentium incidunt rerum qui sunt vitae commodi animi unde illum iusto repudiandae voluptas molestias quae odio recusandae, doloribus alias!</p>
+                </div>
+            </div>
+            <form class="boton-servicios btn2">
+                <a href="./secciones/servicios.html">Composición Online</a>
+            </form>
+            <div class="img-servicios img3" id="servicios">
+                <div class="info">
+                    <p class="info-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates rem amet praesentium incidunt rerum qui sunt vitae commodi animi unde illum iusto repudiandae voluptas molestias quae odio recusandae, doloribus alias!</p>
+                </div>
+            </div>
+            <form class="boton-servicios btn3">
+                <a href="./secciones/recursos.html">Cursos Adicionales</a>
+            </form>
+
+            <div class="img-servicios img4" id="artista">
+                <div class="info">
+                    <p class="info-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates rem amet praesentium incidunt rerum qui sunt vitae commodi animi unde illum iusto repudiandae voluptas molestias quae odio recusandae, doloribus alias!</p>
+                </div>
+            </div>
+            <form class="boton-servicios btn4">
+                <a href="./secciones/recursos.html">Guía Para Artistas</a>
+            </form>
         </section>
 
         <!-- Seccion Parrafos -->
-        <article  class="article3" data-aos="flip-left">
-            <p class="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis delectus tempore?
-                Perspiciatis ratione nesciunt modi facere nemo, ea totam distinctio saepe cumque inventore, error
-                deleniti. Dolores perferendis exercitationem explicabo. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Laboriosam voluptas maxime quisquam! Voluptates praesentium odio nulla maxime dolore
-                natus temporibus sapiente, eos dicta ducimus, incidunt quasi distinctio corrupti, molestiae expedita.
+        <article  class="frases-article" data-aos="flip-left">
+            <p class="frases"><span>Descubre </span><strong>tu voz</strong> de una manera sana y divertida. <br>
+           <span>Aprende </span> a<strong> componer</strong>. <br>
+            <span>Desarrolla</span> tu potencial<strong> artístico</strong> <br>
+            <span>Entrena</span><strong> tu voz</strong> de una manera sana y divertida.
             </p>
         </article>
-        <article class="article4" data-aos="flip-left">
-            <p data-aos="flip-left" class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam vero ratione nihil quae ut
-                illum asperiores beatae labore. Magnam impedit enim iure tempora. Nihil facilis, doloremque ipsam
-                laborum quis fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla enim perspiciatis iure
-                dolor veritatis? Fuga, aut deserunt reiciendis suscipit provident repellat? Nihil et adipisci cum nobis
-                possimus soluta rerum animi.</p>
-        </article>
+        
+        <section class="info-index">
+            <p class="back-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sapiente dolorem necessitatibus nihil ad vel, aliquam odio accusantium? Voluptatum odio porro veritatis quidem sequi suscipit veniam doloribus nobis qui possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque officiis nobis consectetur rem! Repellat magni vel officiis non beatae obcaecati cumque architecto eaque labore. Velit sint doloremque facere ipsum perspiciatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis quibusdam aspernatur, optio aliquam saepe asperiores consequuntur exercitationem vel iure, animi blanditiis nam illum suscipit minima quos obcaecati veritatis eum qui!
+            </p>
 
-        <!-- Video Final -->
-        <div class="video2">
-            <iframe class="vid2" src="https://www.youtube.com/embed/3rtSNtYWs2I"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
+            <div class="back-p">
+                <h2>METODOLOGÍA CANTO</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis delectus, perferendis quos vitae porro laborum quod ullam minus! Quidem enim saepe assumenda nemo minima facere, esse itaque quae! Adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore error atque, fuga, consectetur voluptatem provident, dolores asperiores commodi nihil iusto dolor nam! Iure ducimus distinctio consequuntur? Rerum odio sunt odit.</p>
+            </div>
+            <div class="back-p">
+                <h2>METODOLOGÍA COMPOSICIÓN</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis delectus, perferendis quos vitae porro laborum quod ullam minus! Quidem enim saepe assumenda nemo minima facere, esse itaque quae! Adipisci. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore error atque, fuga, consectetur voluptatem provident, dolores asperiores commodi nihil iusto dolor nam! Iure ducimus distinctio consequuntur? Rerum odio sunt odit.</p>
+            </div>
+        </section>
 
         <!-- Footer -->
         <footer class="footer">
             <div class="footerBox">
                 <div class="iconos">
-                    <img class="logo-footer" src="./imagenes/Logo.jpg" alt="logo"> <br><br>
-                    <img class="icono" src="./imagenes/icons8-facebook.svg" alt="facebook">
-                    <img class="icono" src="./imagenes/icons8-instagram.svg" alt="instagram">
-                    <img class="icono" src="./imagenes/icons8-youtube-play.svg" alt="youtube">
+                    <img class="logo-footer" src="./imagenes/logo.jpeg" alt="logo"> <br><br>
+                    <a href="https://www.facebook.com/ellarice.music"><img class="icono" src="./imagenes/icons8-facebook.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com/alejandraortega.musica/"><img class="icono" src="./imagenes/icons8-instagram.svg" alt="instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCsZBmasEziCdCrMUsJzk9-Q"><img class="icono" src="./imagenes/icons8-youtube-play.svg" alt="youtube"></a>
                 </div>
                 <nav class="footer_nav">
                     <ul>

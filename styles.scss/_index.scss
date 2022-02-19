@@ -1,16 +1,92 @@
 @mixin fonts{
     font: {
+        family: $parrafos;
         size: $small;
-        family: 'Montserrat', sans-serif;
         weight: 300;
     }
 }
 
-.p1, .p2, .p3, .p4{
+p{
     @include fonts;
     padding: 1em;
 }
 
+.info{
+    position: absolute;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 240px;
+    height: 360px;background-color: $naranja;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.frases-article{
+    text-align: center;
+    .frases{
+        @extend .slogan;
+    }
+}
+
+.info-index{
+    background-color: $violeta;
+}
+
+.back-p{
+    background-color: white;
+    width: 70%;
+}
+
+.info-p{
+    text-align: center;
+    color: black;
+}
+
+#canto{
+    width: 240px;
+    height: 360px;
+    background-image: url(../imagenes/canto.jpg);
+}
+
+#canto:hover .info{
+    opacity: 0.9;
+}
+
+#compo{
+    width: 240px;
+    height: 360px;
+    background-image: url(../imagenes/compo.jpg)
+}
+
+#compo:hover .info{
+    opacity: 0.9;
+}
+
+#servicios{
+    width: 240px;
+    height: 360px;
+    background-image: url(../imagenes/cursos.jpg);
+}
+
+#servicios:hover .info{
+    opacity: 0.9;
+}
+
+#artista{
+    width: 240px;
+    height: 360px;
+    background-image: url(../imagenes/artista.jpg);
+}
+
+#artista:hover .info{
+    opacity: 0.9;
+}
+
+p{
+    strong{
+    color: $amarillo;
+    }
+}
 
 /*Comienzo de Header*/
 .vocalcoach{
@@ -18,143 +94,157 @@
     margin-bottom: 1em;
 }
 
-/* Body */
-
-
-.video1{
-    width: 70%;
-    height: 100%;
-    margin-bottom: 1em;
-    margin-left: 3em;
+.info-servicios{
+    background-color: black;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
 }
-.boxServicios{
+
+/*Mobile*/
+@media (min-width:480px){
+    .img-servicios{
+        margin: 1em 25% 1em 25%;
+        border-radius: 5px;
+    }
+    .boton-servicios{
+      margin: 1em 25% 1em 25%; 
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: white;
+      text-align: center;
+      a{
+            text-decoration: none;
+            color: black;
+            @include fonts;
+       }
+    }
+}
+
+.info-index{
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.serviciosImg img{
-    width: 270px; height: 350px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.video2{
-    width: 100%;
-    height: auto;
-}
-
-.vid2{
-    @extend .video1;
-
-}
-
-.c{
-    border: olive 1px solid;
-    padding: 50px 25px 50px 25px;
+.back-p{
     margin-top: 1em;
     margin-bottom: 1em;
-    width: 100%;
-}
-
-/* Grillas y Media Queries */
-
-/* Celular */
-.contenedor{
-    display: grid;
-    grid-template-areas:
-    "nav"
-    "header"
-    "p1"
-    "vid1"
-    "p2"
-    "serviciosImg"
-    "p3"
-    "p4"
-    "vid2"
-    "comments"
-    "footer"
-    ;
-}
-
-.navbar{
-    grid-area: nav;
-}
-
-.header{
-    grid-area: header;
-}
-
-.article1{
-    grid-area: p1;
-}
-
-.mainVid{
-    grid-area: vid1;
-}
-
-.article2{
-    grid-area: p2;
-}
-
-.serviciosImg{
-    grid-area: serviciosImg;  
-}
-
-.article3{
-    grid-area: p3;
-}
-
-.article4{
-    grid-area: p4;
-}
-
-.video2{
-    grid-area: vid2;
-}
-
-.c{
-    grid-area: comments;
-}
-
-.footer{
-    grid-area: footer;
+    text-align: center;
+    padding-top: 0.5em;
 }
 
 /*Tablet*/
+@media (min-width:768px){
+    .slogan-box{
+        padding: 2em 10em 2em 10em;
+    }
 
-@media screen and (min-width:768px){
-  .contenedor{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-    "nav nav"
-    "header header"
-    "vid1 p1"
-    "p2 p2"
-    "serviciosImg"
-    "p3 vid2"
-    "p4 p4"
-    "comments comments"
-    "footer footer"
-    ;
+    .boton-servicios{
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .info-servicios{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5fr 1fr 5fr 1fr;
+        grid-template-areas: 
+        "img1 img2"
+        "btn1 btn2"
+        "img3 img4"
+        "btn3 btn4"
+        ;
+    }
+
+    .img1{
+        grid-area: img1;
+    }
+
+    .img2{
+        grid-area: img2;
+    }
+
+    .img3{
+        grid-area: img3;
+    }
+
+    .img4{
+        grid-area: img4;
+    }
+
+    .btn1{
+        grid-area: btn1;
+    }
+
+    .btn2{
+        grid-area: btn2;
+    }
+
+    .btn3{
+        grid-area: btn3;
+    }
+
+    .btn4{
+        grid-area: btn4;
+    }
 }
-}
 
-/*Ordenador*/
 
-@media screen and (min-width: 992px){
-    .contenedor{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-areas:
-      "nav nav nav nav"
-      "header header header header"
-      "vid1 vid1 p1 p1"
-      "vid1 vid1 p2 p2"
-      "serviciosImg serviciosImg serviciosImg serviciosImg"
-      "p3 p3 vid2 vid2"
-      "p4 p4 vid2 vid2"
-      "comments comments comments comments"
-      "footer footer footer footer"
-      ;
-  }
+/*Desktop*/
+@media (min-width:992px){
+    .slogan-box{
+        padding: 2em 30em 2em 30em;
+    }
+
+    .boton-servicios{
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        width: 70%;
+    }
+
+    .info-servicios{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 5fr 1fr;
+        grid-template-areas: 
+        "img1 img2 img3 img4"
+        "btn1 btn2 btn3 btn4"
+        ;
+    }
+
+    .img1{
+        grid-area: img1;
+    }
+
+    .img2{
+        grid-area: img2;
+    }
+
+    .img3{
+        grid-area: img3;
+    }
+
+    .img4{
+        grid-area: img4;
+    }
+
+    .btn1{
+        grid-area: btn1;
+    }
+
+    .btn2{
+        grid-area: btn2;
+    }
+
+    .btn3{
+        grid-area: btn3;
+    }
+
+    .btn4{
+        grid-area: btn4;
+    }
 }

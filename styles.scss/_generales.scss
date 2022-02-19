@@ -9,3 +9,28 @@ body{
     height: auto;
     background-color: white
 }
+
+h1{
+    font-family: $parrafos;
+    color: $naranja;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+h2{
+    font-family: $parrafos;
+}
+
+.logo-nav{
+    width: 7em;
+    height: auto;
+}
+
+.slogan{
+    font-family: $especial;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-align: center;
+}
+

@@ -1,16 +1,22 @@
 
-
-div{
-  img{
-    width: 15rem;
-  }
-}
-
 article{
   .box{
-    background-color: crimson;
+    background-color: $amarillo;
     margin: 1em;
     width: 60%;
+    a{
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 0.5em 3% 0.5em 3%;
+      border-radius: 5px;
+      margin-left: 40%;
+    }
+    a:hover{
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
   }
   .imgContainer{
     padding: 2em;
@@ -18,9 +24,21 @@ article{
   }
 }
 
+article{
+  div{
+    img{
+      width: 100%;
+    }
+  }
+}
 
-/*Grids*/
+.box1 , .box2 , .box3 , .box4{
+  padding: 1em 0.5em 0.1em 1em;
+}
 
+/*MOBILE*/
+
+@media (min-width:480px){
 .gridServicios{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -30,6 +48,7 @@ article{
   "article3"
   "article4"
   ;
+}
 }
 
 .ar1{
@@ -61,8 +80,6 @@ article{
   flex-wrap: wrap;
 }
 
-/*Media*/
-
 /*Tablet*/
 @media screen and (min-width:768px){
   .ar1{
@@ -91,20 +108,24 @@ article{
   .ar1{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .ar2{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .ar3{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .ar4{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }

@@ -1,9 +1,18 @@
-nav ul li{
-    list-style-type: none;
-}
+nav{
+    ul{ 
+        li{
+            list-style-type: none;
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            a:hover{
+                color: $amarillo;
 
-ul li a{
-    color: grey;
+            }
+            
+        }
+    } 
 }
     
 
@@ -26,7 +35,8 @@ ul li a{
 }
 
 .logo-footer{
-    width: 12rem;
+    width: 7em;
+    height: auto;
 }
 
 .footer_nav{
