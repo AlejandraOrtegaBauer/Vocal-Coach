@@ -27,7 +27,7 @@ article{
 article{
   div{
     img{
-      width: 100%;
+      
     }
   }
 }
@@ -38,6 +38,10 @@ article{
 
 /*MOBILE*/
 
+<<<<<<< HEAD
+=======
+@media (min-width:375px){
+>>>>>>> style
 .gridServicios{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -99,6 +103,11 @@ article{
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+
+.imgContainer{
+  padding: 2em;
+  width: 50%;
 }
 
 /*Ordenador*/

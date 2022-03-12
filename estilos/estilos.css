@@ -25,15 +25,19 @@ h2 {
 }
 
 .logo-nav {
-  width: 7em;
+  width: 5em;
   height: auto;
 }
 
 .slogan, .frases-article .frases {
   font-family: "Alegreya SC", serif;
+  color: black;
   text-transform: uppercase;
   font-size: 1.5em;
   text-align: center;
+}
+.slogan strong, .frases-article .frases strong {
+  color: #f7c962;
 }
 
 nav ul li {
@@ -47,16 +51,20 @@ nav ul li a:hover {
   color: #f7c962;
 }
 
-.footer {
+footer {
   background-color: #f1efef;
-}
-
-.footerBox {
   display: flex;
   flex-direction: row;
   padding: 1em;
 }
 
+/*
+.footerBox{
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+*/
 .form {
   width: 40%;
 }
@@ -167,9 +175,32 @@ p strong {
 }
 
 /*Mobile*/
+<<<<<<< HEAD
 .img-servicios {
   margin: 1em 25% 1em 25%;
   border-radius: 5px;
+=======
+@media (min-width: 375px) {
+  .img-servicios {
+    margin: 1em 25% 1em 25%;
+    border-radius: 5px;
+  }
+
+  .boton-servicios {
+    margin: 1em 25% 1em 25%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+  }
+  .boton-servicios a {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+  }
+>>>>>>> style
 }
 
 .boton-servicios {
@@ -306,8 +337,40 @@ p strong {
   }
 }
 /*Mobile*/
+<<<<<<< HEAD
 div iframe {
   width: 100%;
+=======
+@media (min-width: 375px) {
+  .vid1, .vid2 {
+    width: 75%;
+    margin-left: 3em;
+  }
+  .vid1 iframe, .vid2 iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    padding-left: 0.5em;
+  }
+
+  .intro {
+    background-color: #e4bdea;
+  }
+
+  .masInfo {
+    background-color: #e4bdea;
+    margin-top: 0.5em;
+  }
+
+  .formacion {
+    background-color: #f7c962;
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+  }
+>>>>>>> style
 }
 
 .intro {
@@ -327,15 +390,93 @@ div iframe {
   .container-sobremi {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2.7fr 2fr;
+    grid-template-rows: 0.65fr 1fr 0.5fr;
     grid-row-gap: 1em;
-    grid-template-areas: "vid1 intro" "formacion formacion" "logros vid2";
+    grid-template-areas: "intro vid1" "formacion formacion" "logros vid2";
+  }
+
+  h3 {
+    font-size: large;
+  }
+
+  p {
+    font-size: medium;
   }
 
   .vid1 {
     grid-area: vid1;
     width: 90%;
+    height: 100%;
+    margin-left: 2em;
+    margin-right: 3em;
+    padding-left: 0;
+    background-color: black;
+  }
+  .vid1 iframe {
+    width: 100%;
+    height: 50%;
+    margin-top: 7em;
+  }
+
+  .intro {
+    grid-area: intro;
+    margin-left: 1em;
+    font-size: 0.5em;
+  }
+
+  .formacion {
+    grid-area: formacion;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .masInfo {
+    grid-area: logros;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+
+  .vid2 {
+    grid-area: vid2;
+    width: 90%;
+    height: 100%;
+    margin-left: 2em;
+    margin-right: 3em;
+    padding-left: 0;
+  }
+  .vid2 iframe {
+    width: 100%;
+    height: 90%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+/*Desktop*/
+@media (min-width: 992px) {
+  .container-sobremi {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0.65fr 1fr 0.65fr;
+    grid-row-gap: 1em;
+    grid-template-areas: "vid1 intro" "formacion formacion" "logros vid2";
+  }
+
+  h3 {
+    padding-left: 1em;
+    padding-top: 0.5em;
+  }
+
+  .vid1 {
+    grid-area: vid1;
+    background-color: white;
+  }
+  .vid1 iframe {
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
   }
 
   .intro {
@@ -346,16 +487,25 @@ div iframe {
     grid-area: formacion;
   }
 
-  .logros {
+  .masInfo {
     grid-area: logros;
   }
 
   .vid2 {
     grid-area: vid2;
     width: 90%;
+    height: auto;
+    background-color: white;
+    margin-bottom: 1em;
+    padding-left: 3em;
+  }
+  .vid2 iframe {
+    width: 70%;
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 1em;
   }
 }
-/*Desktop*/
 article .box {
   background-color: #f7c962;
   margin: 1em;
@@ -379,19 +529,24 @@ article .imgContainer {
   width: 30%;
 }
 
-article div img {
-  width: 100%;
-}
-
 .box1, .box2, .box3, .box4 {
   padding: 1em 0.5em 0.1em 1em;
 }
 
 /*MOBILE*/
+<<<<<<< HEAD
 .gridServicios {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas: "article1" "article2" "article3" "article4";
+=======
+@media (min-width: 375px) {
+  .gridServicios {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "article1" "article2" "article3" "article4";
+  }
+>>>>>>> style
 }
 
 .ar1 {
@@ -444,6 +599,11 @@ article div img {
     flex-wrap: wrap;
   }
 }
+.imgContainer {
+  padding: 2em;
+  width: 50%;
+}
+
 /*Ordenador*/
 @media screen and (min-width: 992px) {
   .ar1 {
@@ -502,6 +662,10 @@ article div img {
 }
 
 .card7 {
+  margin-bottom: 2em;
+}
+
+.card8 {
   margin-bottom: 2em;
 }
 
