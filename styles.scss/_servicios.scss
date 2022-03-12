@@ -38,10 +38,8 @@ article{
 
 /*MOBILE*/
 
-<<<<<<< HEAD
-=======
+
 @media (min-width:375px){
->>>>>>> style
 .gridServicios{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -80,6 +78,7 @@ article{
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
+}
 }
 
 /*Tablet*/
