@@ -175,11 +175,6 @@ p strong {
 }
 
 /*Mobile*/
-<<<<<<< HEAD
-.img-servicios {
-  margin: 1em 25% 1em 25%;
-  border-radius: 5px;
-=======
 @media (min-width: 375px) {
   .img-servicios {
     margin: 1em 25% 1em 25%;
@@ -200,30 +195,13 @@ p strong {
     font-size: 1em;
     font-weight: 300;
   }
->>>>>>> style
-}
 
-.boton-servicios {
-  margin: 1em 25% 1em 25%;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: white;
-  text-align: center;
+  .info-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.boton-servicios a {
-  text-decoration: none;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-size: 1em;
-  font-weight: 300;
-}
-
-.info-index {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .back-p {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -337,10 +315,6 @@ p strong {
   }
 }
 /*Mobile*/
-<<<<<<< HEAD
-div iframe {
-  width: 100%;
-=======
 @media (min-width: 375px) {
   .vid1, .vid2 {
     width: 75%;
@@ -370,21 +344,7 @@ div iframe {
     padding-bottom: 0.5em;
     margin-bottom: 0.5em;
   }
->>>>>>> style
 }
-
-.intro {
-  background-color: #e4bdea;
-}
-
-.logros {
-  background-color: #e4bdea;
-}
-
-.formacion {
-  background-color: #f7c962;
-}
-
 /*Tablet*/
 @media (min-width: 768px) {
   .container-sobremi {
@@ -535,12 +495,6 @@ h2 {
 }
 
 /*MOBILE*/
-<<<<<<< HEAD
-.gridServicios {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "article1" "article2" "article3" "article4";
-=======
 @media (min-width: 375px) {
   .gridServicios {
     display: grid;
@@ -548,34 +502,32 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-areas: "article1" "article2" "article3" "article4";
   }
->>>>>>> style
-}
 
-.ar1 {
-  grid-area: article1;
-  width: 100%;
-}
+  .ar1 {
+    grid-area: article1;
+    width: 100%;
+  }
 
-.ar2 {
-  grid-area: article2;
-  width: 100%;
-}
+  .ar2 {
+    grid-area: article2;
+    width: 100%;
+  }
 
-.ar3 {
-  grid-area: article3;
-  width: 100%;
-}
+  .ar3 {
+    grid-area: article3;
+    width: 100%;
+  }
 
-.ar4 {
-  grid-area: article4;
-  width: 100%;
-}
+  .ar4 {
+    grid-area: article4;
+    width: 100%;
+  }
 
-.ar1, .ar2, .ar3, .ar4 {
-  width: 100%;
-  margin-left: 3.5em;
+  .ar1, .ar2, .ar3, .ar4 {
+    width: 100%;
+    margin-left: 3.5em;
+  }
 }
-
 /*Tablet*/
 @media screen and (min-width: 768px) {
   .ar1 {
