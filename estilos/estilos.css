@@ -529,8 +529,9 @@ article .imgContainer {
   width: 30%;
 }
 
-.box1, .box2, .box3, .box4 {
-  padding: 1em 0.5em 0.1em 1em;
+h2 {
+  padding-left: 0.5em;
+  padding-top: 0.5em;
 }
 
 /*MOBILE*/
@@ -544,6 +545,7 @@ article .imgContainer {
   .gridServicios {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: "article1" "article2" "article3" "article4";
   }
 >>>>>>> style
@@ -551,30 +553,27 @@ article .imgContainer {
 
 .ar1 {
   grid-area: article1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .ar2 {
   grid-area: article2;
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .ar3 {
   grid-area: article3;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  width: 100%;
 }
 
 .ar4 {
   grid-area: article4;
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ar1, .ar2, .ar3, .ar4 {
+  width: 100%;
+  margin-left: 3.5em;
 }
 
 /*Tablet*/
@@ -607,27 +606,27 @@ article .imgContainer {
 /*Ordenador*/
 @media screen and (min-width: 992px) {
   .ar1 {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .ar2 {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .ar3 {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 
   .ar4 {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 .cards {
