@@ -14,12 +14,12 @@
     <title>Recursos Para Artistas</title>
 </head>
 
-<body class="recursosBody">
-    <!-- Nav -->
+<body>
+    <header>
         <nav class="navbar navbar-expand-lg  sticky-top navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
-                    <img class="logo-nav" src="../imagenes/logo.jpeg" alt="logo"></a>
+                    <img class="logo-nav" src="../imagenes/logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -50,19 +50,12 @@
                 </div>
             </div>
         </nav>
-        <!-- Header -->
-        <header class="scale-up-bottom">
-            <div data-aos="zoom-in">
-                <img class="vocalcoach" src="../imagenes/alejandra.png" alt="vocalcoach">
-            </div>
-        </header>
-
-
-        <!-- Cards Section -->
+    </header>
+        
         <div>
             <h1>RECURSOS PARA ARTISTAS</h1>
         </div>
-        <div class="cards">
+        <section class="cards">
             <div class="card1 bg-secondary bg-opacity-10" style="width: 18rem;">
                 <img src="../imagenes/afinacion.jpg" class="card-img-top" alt="afinacion">
                 <div class="card-body">
@@ -111,16 +104,28 @@
                     <a href="#" class="btn btn-dark">Lo Quiero</a>
                 </div>
             </div>
-            <div class="card6 bg-secondary bg-opacity-10" style="width: 22rem;">
+            <div class="card6 bg-secondary bg-opacity-10" style="width: 18rem;">
                 <img src="../imagenes/plan_rrss.jpg" class="card-img-top" alt="redes_sociales">
                 <div class="card-body">
-                    <h5 class="card-title">Plan Redes Sociales Para Artistas</h5>
+                    <h5 class="card-title">Redes Sociales Para Artistas</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <a href="#" class="btn btn-dark">Lo Quiero</a>
                 </div>
             </div>
+
             <div class="card7 bg-secondary bg-opacity-10" style="width: 18rem;">
+                <img src="../imagenes/grabaciones.jpg" class="card-img-top" alt="afinacion">
+                <div class="card-body">
+                    <h5 class="card-title">Producción Musical y Arreglos</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-dark">Lo Quiero</a>
+                </div>
+            </div>
+
+            <div class="card8 bg-secondary bg-opacity-10" style="width: 18rem;">
                 <img src="../imagenes/voz_cabeza.jpg" class="card-img-top" alt="voz_cabeza">
                 <div class="card-body">
                     <h5 class="card-title">Curso Voz de Cabeza</h5>
@@ -129,55 +134,53 @@
                     <a href="#" class="btn btn-dark">Lo Quiero</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footerBox">
+  
+        <footer>
             <div class="iconos">
-                <img class="logo-footer" src="../imagenes/logo.jpeg" alt="logo"> <br><br>
-                <a href="https://www.facebook.com/ellarice.music"><img class="icono" src="../imagenes/icons8-facebook.svg" alt="facebook"></a>
-                <a href="https://www.instagram.com/alejandraortega.musica/"><img class="icono" src="../imagenes/icons8-instagram.svg" alt="instagram"></a>
-                <a href="https://www.youtube.com/channel/UCsZBmasEziCdCrMUsJzk9-Q"><img class="icono" src="../imagenes/icons8-youtube-play.svg" alt="youtube"></a>
+              <img class="logo-footer" src="../imagenes/logo-footer.png" alt="logo"> <br><br>
+              <a href="https://www.facebook.com/ellarice.music"><img class="icono" src="../imagenes/icons8-facebook.svg"
+                  alt="facebook"></a>
+              <a href="https://www.instagram.com/alejandraortega.musica/"><img class="icono"
+                  src="../imagenes/icons8-instagram.svg" alt="instagram"></a>
+              <a href="https://www.youtube.com/channel/UCsZBmasEziCdCrMUsJzk9-Q"><img class="icono"
+                  src="../imagenes/icons8-youtube-play.svg" alt="youtube"></a>
             </div>
             <nav class="footer_nav">
-                <ul>
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href=".sobremi.html">Sobre Mí</a>
-                    </li>
-                    <li>
-                        <a href=".servicios.html">Servicios</a>
-                    </li>
-                    <li>
-                        <a href=".recursos.html">Recursos Para Cantantes</a>
-                    </li>
-                    <li>
-                        <a href=".contacto.html">Contacto</a>
-                    </li>
-                </ul>
+              <ul>
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="./sobremi.html">Sobre Mí</a>
+                </li>
+                <li>
+                  <a href="./servicios.html">Servicios</a>
+                </li>
+                <li>
+                  <a href="./recursos.html">Recursos Para Cantantes</a>
+                </li>
+                <li>
+                  <a href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
             </nav>
             <div class="form">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Correo Electrónico</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Quiero suscribirme al newsletter
-                    </label>
-                    <input class="btn btn-dark" type="submit" value="Submit">
-                </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Correo Electrónico</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Quiero suscribirme al newsletter
+                </label>
+                <input class="btn btn-dark" type="submit" value="Submit">
+              </div>
             </div>
-        </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-          </script>
-    </footer>
+          
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
